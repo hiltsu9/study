@@ -13,7 +13,7 @@ int main(void){
 	}
 	y%=7;
 
-	cout<<day_of_week[result];
+	cout<<day_of_week[y];
 
 	return 0;
 }
