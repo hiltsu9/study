@@ -9,7 +9,7 @@ int main(void){
 	cin>>x>>y;
 	
 	for(int i=0;i<x;i++){
-		+=month_len[i];
+		y+=month_len[i];
 	}
 	result%=7;
 
