@@ -6,13 +6,11 @@ int main(void){
 	char day_of_week[7][4]={"SUN","MON","TUE","WED","THU","FRI","SAT"};
 	
 	int x,y;
-	int result=0;
 	cin>>x>>y;
 	
 	for(int i=0;i<x;i++){
-		result+=month_len[i];
+		+=month_len[i];
 	}
-	result+=y;
 	result%=7;
 
 	cout<<day_of_week[result];
