@@ -1,26 +1,22 @@
-#include <iostream>
-#include <vector>
-#include <float.h> // define the max, min value of real number
+#include<stdio.h>
 
-using namespace std;
-int main(void){
-	vector <double> input;
-	int n;
-	double grade;
-	double max=DBL_MIN;
+int n, a, max;
+float x;
 
-	cin>>n;
-	for(int i=0;i<n;i++){
-		cin>> grade;
-		input.push_back(grade);
-		if(max<grade)max=grade;
+int main()
+{
+	x=0;
+	max=0;
+	scanf("%d", &n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d", &a);
+		x+=a*100;
+		if(a>max)
+		{
+			max=a;
+		}
 	}
-
-	grade=0;
-	for(int i=0;i<input.size();i++){
-		input[i]=input[i]/max*100;
-		grade+=input[i];
-	}
-
-	cout<<grade/n;
+	
+	printf("%f", x/max/n);
 }
