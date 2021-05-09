@@ -11,7 +11,7 @@ int main(void){
 	for(int i=0;i<x;i++){
 		y+=month_len[i];
 	}
-	result%=7;
+	y%=7;
 
 	cout<<day_of_week[result];
 
