@@ -1,5 +1,9 @@
 # codingTest_study
 
+ ## 스터디 목표
+ 
+ 일주일에 4회 이상의 commit 및 feedback
+
  ## 문제 코드 공유 방법
  
  파일 이름 : 문제 사이트 url의 호스트 네임 - 문제번호
