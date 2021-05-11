@@ -4,11 +4,11 @@
 using namespace std;
 
 int main(void){
-	string input;
-	icin>>input;
-	for(int i=0;i<input.size();i++){
-		if(input[i]>='A'&&input[i]<='C') printf("%c",input[i]+('X'-'A'));
-		else printf("%c",input[i]-3);
-	}
-	return 0;
+        char caiser[26]={'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'};
+        string input;
+        cin>>input;
+        for(int i=0;i<input.size();i++){
+                printf("%c",caiser[input[i]-'A']);
+        }
+        return 0;
 }
